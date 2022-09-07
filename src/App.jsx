@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Welcome from './components/Welcome';
+import Visualization from './components/Visualization';
 
 function App() {
   const [formData, setFormData] = React.useState({
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className='App'>
       {start ? (
-        <h1>Go</h1>
+        <Visualization formData={formData} />
       ) : (
         <Welcome
           formData={formData}
