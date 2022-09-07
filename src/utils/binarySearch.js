@@ -11,7 +11,7 @@ const data = {
   result: null,
 };
 
-export function binarySearch(data) {
+export default function binarySearch(data) {
   if (data.lo > data.hi) {
     data.result = -1;
     return data;
