@@ -1,5 +1,22 @@
-const Welcome = ({ formData, setFormData, setStart }) => {
-  const handleSubmit = () => {
+import binarySearch from '../utils/binarySearch.js';
+import { strToArr } from '../utils/tools';
+const Welcome = ({ formData, setFormData, setStart, searchResult }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const arr = strToArr(formData.arrStr);
+    const data = {
+      arr,
+      target: parseInt(formData.target),
+      lo: 0,
+      hi: arr.length - 1,
+      mid: null,
+      loArr: [],
+      hiArr: [],
+      midArr: [],
+      result: null,
+    };
+
+    searchResult.current = binarySearch(data);
     setStart(true);
   };
 
@@ -13,7 +30,7 @@ const Welcome = ({ formData, setFormData, setStart }) => {
 
   return (
     <div className='welcome'>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <label htmlFor='arrStr'>Array: </label>
         <input
           type='text'

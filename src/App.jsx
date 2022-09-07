@@ -9,6 +9,7 @@ function App() {
     target: '2',
   });
   const [start, setStart] = React.useState(false);
+  const searchResult = React.useRef(null);
 
   return (
     <div className='App'>
@@ -19,6 +20,7 @@ function App() {
           formData={formData}
           setFormData={setFormData}
           setStart={setStart}
+          searchResult={searchResult}
         />
       )}
     </div>
