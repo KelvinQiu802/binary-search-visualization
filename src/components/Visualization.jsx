@@ -23,16 +23,16 @@ const Visualization = ({ formData, searchResult }) => {
 
   return (
     <div>
-      <Hi />
-      <Lo />
+      <Hi index={searchResult.current.hiArr[index]} />
+      <Lo index={searchResult.current.loArr[index]} />
       <div className='array'>
         {arr.map((item, index) => (
-          <div key={index} className='num'>
+          <div key={index} className='num' id={index}>
             {item}
           </div>
         ))}
       </div>
-      <Mid />
+      <Mid index={searchResult.current.midArr[index]} />
       <div className='btn-group'>
         <button onClick={handlePrev} disabled={index === 0}>
           prev
