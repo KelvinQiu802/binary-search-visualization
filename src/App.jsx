@@ -14,7 +14,7 @@ function App() {
   return (
     <div className='App'>
       {start ? (
-        <Visualization formData={formData} />
+        <Visualization formData={formData} searchResult={searchResult} />
       ) : (
         <Welcome
           formData={formData}
