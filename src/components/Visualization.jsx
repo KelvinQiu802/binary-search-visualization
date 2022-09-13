@@ -1,4 +1,5 @@
 import { strToArr } from '../utils/tools';
+import Hi from './Hi';
 import React from 'react';
 
 const Visualization = ({ formData, searchResult }) => {
@@ -20,6 +21,7 @@ const Visualization = ({ formData, searchResult }) => {
 
   return (
     <div>
+      <Hi />
       <div className='array'>
         {arr.map((item, index) => (
           <div key={index} className='num'>

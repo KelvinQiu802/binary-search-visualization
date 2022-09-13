@@ -29,3 +29,20 @@
 .btn-group button {
   padding: 10px;
 }
+
+.hi {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 20px;
+  align-items: center;
+  flex: 0;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.hi div {
+  height: 100px;
+  width: 5px;
+  background-color: orange;
+}
