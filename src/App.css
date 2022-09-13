@@ -57,3 +57,17 @@
   background-color: skyblue;
   margin: 0 auto;
 }
+
+.mid {
+  position: relative;
+  width: 30px;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.mid div {
+  height: 50px;
+  width: 5px;
+  background-color: greenyellow;
+  margin: 0 auto;
+}

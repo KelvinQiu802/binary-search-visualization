@@ -1,5 +1,6 @@
 import { strToArr } from '../utils/tools';
 import Hi from './Hi';
+import Mid from './Mid';
 import Lo from './Lo';
 import React from 'react';
 
@@ -31,6 +32,7 @@ const Visualization = ({ formData, searchResult }) => {
           </div>
         ))}
       </div>
+      <Mid />
       <div className='btn-group'>
         <button onClick={handlePrev} disabled={index === 0}>
           prev
