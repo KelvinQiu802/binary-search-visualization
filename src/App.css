@@ -31,12 +31,8 @@
 }
 
 .hi {
-  display: flex;
-  flex-direction: column;
   position: relative;
   width: 20px;
-  align-items: center;
-  flex: 0;
   font-size: 1.2em;
   margin-bottom: 5px;
 }
@@ -45,4 +41,19 @@
   height: 100px;
   width: 5px;
   background-color: orange;
+  margin: 0 auto;
+}
+
+.lo {
+  position: relative;
+  width: 20px;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.lo div {
+  height: 50px;
+  width: 5px;
+  background-color: skyblue;
+  margin: 0 auto;
 }
